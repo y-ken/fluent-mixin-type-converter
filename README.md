@@ -85,7 +85,7 @@ this is required if you will use kind of 'remove_tag_prefix' option together
 ##### implement example for input plugin
 
 ```ruby
-require 'fluent/mixin/type_converter
+require 'fluent/mixin/type_converter'
 
 module Fluent
   class FooBarInput < Fluent::Input
@@ -115,7 +115,7 @@ end
 ##### implement example for output plugin
 
 ```ruby
-require 'fluent/mixin/type_converter
+require 'fluent/mixin/type_converter'
 
 class Fluent
   class FooBarOutput < Fluent::Output
