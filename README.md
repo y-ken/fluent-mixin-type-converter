@@ -2,7 +2,7 @@
 
 ## Overview
 
-Fluentd mixin plugin to provides type conversion function as like as in_tail plugin. It acts calling [Fluent::TextParser::TypeConverter](https://github.com/fluent/fluentd/blob/master/lib/fluent/parser.rb) as mixin. It will let you get easy to implement type conversion for your own plugins.
+Fluentd mixin plugin to provides type conversion function as like as in_tail plugin. It acts calling [Fluent::TextParser::TypeConverter](https://github.com/fluent/fluentd/blob/master/lib/fluent/parser.rb#L54) as mixin. It will let you get easy to implement type conversion for your own plugins.
 
 ## Function
 
@@ -49,7 +49,7 @@ Adding this mixin plugin, it will enabled to use these type conversion in your p
 </match>
 ```
 
-Another examples are written in [unit test](https://github.com/y-ken/fluent-mixin-type-converter/blob/master/test/mixin/test_type_converter).
+Another examples are written in [unit test](https://github.com/y-ken/fluent-mixin-type-converter/blob/master/test/mixin/test_type_converter.rb).
 
 ## Usage
 
