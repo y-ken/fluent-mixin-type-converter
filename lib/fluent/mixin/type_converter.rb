@@ -10,17 +10,6 @@ module Fluent
       def configure(conf)
         super
 
-        if types = conf['types']
-          @types = types
-        end
- 
-        if types_delimiter = conf['types_delimiter']
-          @types_delimiter = types_delimiter
-        end
- 
-        if types_label_delimiter = conf['types_label_delimiter']
-          @types_label_delimiter = types_label_delimiter
-        end
       end
 
       def filter_record(tag, time, record)
