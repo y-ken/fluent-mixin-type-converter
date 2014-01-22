@@ -15,13 +15,13 @@ It supportes these type conversion.
 - time
 - array
 
-#### Option
+#### Option Parameters
 
-* `types_delimiter`  
-[default] `,`
+* types_delimiter  
+  * [default] `,`
 
-* `types_label_delimiter`  
-[default] `:`
+* types_label_delimiter  
+  * [default] `:`
 
 ## Configuration
 
