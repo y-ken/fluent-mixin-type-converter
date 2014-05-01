@@ -23,7 +23,6 @@ class TypeConverterMixinTest < Test::Unit::TestCase
       d = create_driver('unknown_keys')
     }
     d = create_driver(CONFIG)
-    puts d.instance.inspect
     assert_equal 'code:integer,response_time:float', d.instance.config['types']
   end
 
