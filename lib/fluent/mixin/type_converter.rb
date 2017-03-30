@@ -1,3 +1,5 @@
+require 'fluent/parser'
+
 module Fluent
   module Mixin
     module TypeConverter

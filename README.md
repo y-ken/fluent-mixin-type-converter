@@ -30,7 +30,7 @@ Adding this mixin plugin, it will enabled to use these type conversion in your p
 ```xml
 # input plugin example
 <source>
-  type   foo_bar
+  @type  foo_bar
   tag    test.message
   
   # type conversion with this rule before emit.
@@ -41,7 +41,7 @@ Adding this mixin plugin, it will enabled to use these type conversion in your p
 ```xml
 # output plugin example
 <match test.foo>
-  type   foo_bar
+  @type  foo_bar
   tag    test.message
 
   # type conversion with this rule before emit.
@@ -103,7 +103,7 @@ module Fluent
     def emit_message(tag, message)
       emit_tag = tag.dup
       filter_record(emit_tag, Engine.now, message)
-      Engine.emit(emit_tag, Engine.now, message)
+      router.emit(emit_tag, Engine.now, message)
     end
 
     # ...snip...
